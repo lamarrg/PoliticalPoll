@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Political Poll</title>
+        <link rel="stylesheet" href="styles.css" type="text/css" />
+    </head>
+    <body>
+        <div class="backgrounds">
+            <div class="main-content">
+                <!-- This is a comment -->
+                <h1>Take a Poll</h1>
+                <form action="receiver.php" method="POST">
+                    <input type="hidden" name="formID" value="political_poll"/>
+                    <input type="hidden" name="successredirecturl" value="success.html"/>
+                    <input type="hidden" name="rejectredirecturl" value="fail.html"/>
+                    <p>Gender: 
+                        <select name="gender" required>
+                            <option value="">Please Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                    <p>Age: <input type="number" name="age" step="1" min="18" max="110" size="6" required/></p>
+                    <p>How often to you vote: 
+                        <select name="vote_freq" required>
+                            <option value="">Please Select</option>
+                            <option value="often">Often</option>
+                            <option value="occasionally">Occastionally</option>
+                            <option value="never">Never</option>
+                        </select>
+                    </p>
+                    <p>Political Party: 
+                        <select name="political_party" required>
+                            <option value="">Please Select</option>
+                            <option value="democrat">Democrat</option>
+                            <option value="republican">Republican</option>
+                            <option value="independent">Independent</option>
+                            <option value="other">Other</option></option>
+                        </select>
+                    </p>
+                    <p>Who will you vote for: 
+                        <select name="vote_for" required>
+                            <option value="">Please Select</option>
+                            <option value="bernie">Bernie</option>
+                            <option value="hillary">Hillary</option>
+                            <option value="donald">Donald</option>
+                        </select>
+                    </p>
+                    <input type="submit" class="button" value="Submit Me!"/>
+                </form>
+            </div> <!-- main-content -->
+        </div> <!-- backgrounds -->
+    </body>
+</html>

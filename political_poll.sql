@@ -1,0 +1,12 @@
+CREATE TABLE political_poll (pollID INT NOT NULL AUTO_INCREMENT,
+                    formID varchar(50) DEFAULT NULL,
+                    gender varchar(10) DEFAULT NULL,
+                    age int DEFAULT NULL,
+                    vote_freq varchar(20) DEFAULT NULL,
+                    political_party varchar(40) DEFAULT NULL,
+                    vote_for varchar(40) DEFAULT NULL,
+                    entry_timestamp datetime DEFAULT NULL,
+                    source_ip char(15) DEFAULT NULL,
+                    successredirecturl char(200) DEFAULT NULL,
+                    rejectredirecturl char(200) DEFAULT NULL,
+                    PRIMARY KEY (pollID));
